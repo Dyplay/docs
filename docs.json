@@ -58,16 +58,6 @@
           "anchor": "Join Server",
           "href": "minecraft://mcweb.dyplay.at",
           "icon": "gamepad-2"
-        },
-        {
-          "anchor": "Discord",
-          "href": "#",
-          "icon": "discord"
-        },
-        {
-          "anchor": "Status",
-          "href": "#",
-          "icon": "chart-line"
         }
       ]
     }
@@ -103,7 +93,6 @@
   },
   "footer": {
     "socials": {
-      "discord": "#",
       "github": "https://github.com/dyplay"
     }
   }
