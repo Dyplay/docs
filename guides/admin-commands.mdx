@@ -1,0 +1,284 @@
+---
+title: "Admin Commands"
+description: "Administrative commands for MCWeb staff members"
+---
+
+## Administrative Commands
+
+This guide covers commands available to MCWeb staff members for server management and moderation.
+
+<Note>
+This page is intended for staff members only. All commands require appropriate permissions.
+</Note>
+
+## 🛡️ Moderation Commands
+
+### Basic Moderation (Helper+)
+
+#### Player Management
+- `/kick <player> [reason]` - Remove player from server
+- `/warn <player> <reason>` - Issue warning to player
+- `/mute <player> [time] [reason]` - Prevent player from chatting
+- `/unmute <player>` - Remove chat restriction
+- `/freeze <player>` - Prevent player movement
+
+#### Information Gathering
+- `/whois <player>` - Detailed player information
+- `/history <player>` - View punishment history
+- `/alts <player>` - Check for alternate accounts
+- `/ip <player>` - View player IP address (Mod+)
+
+### Advanced Moderation (Moderator+)
+
+#### Temporary Punishments
+- `/tempban <player> <time> [reason]` - Temporary ban
+- `/tempmute <player> <time> [reason]` - Temporary mute
+- `/jail <player> [time]` - Confine player to jail area
+
+#### Permanent Actions
+- `/ban <player> [reason]` - Permanently ban player
+- `/unban <player>` - Remove ban from player
+- `/banip <ip> [reason]` - Ban IP address
+- `/unbanip <ip>` - Remove IP ban
+
+#### Chat Management
+- `/clearchat` - Clear server chat
+- `/slowchat <seconds>` - Enable chat cooldown
+- `/broadcast <message>` - Server-wide announcement
+- `/staffchat <message>` - Message to online staff
+
+## 🎮 Game Management
+
+### Player Assistance (Helper+)
+- `/tp <player>` - Teleport to player
+- `/tphere <player>` - Teleport player to you
+- `/heal <player>` - Restore player health
+- `/feed <player>` - Restore player hunger
+- `/fly <player>` - Toggle flight for player
+
+### Inventory Management (Mod+)
+- `/give <player> <item> [amount]` - Give items to player
+- `/clear <player>` - Clear player inventory
+- `/invsee <player>` - View player inventory
+- `/enderchest <player>` - View player ender chest
+
+### World Interaction (Admin+)
+- `/gamemode <mode> [player]` - Change gamemode
+- `/time set <time>` - Set world time
+- `/weather <type> [duration]` - Change weather
+- `/difficulty <level>` - Set world difficulty
+
+## 🏗️ WorldEdit Commands
+
+### Selection Tools (Builder+)
+- `//wand` - Get selection tool
+- `//pos1` - Set first position
+- `//pos2` - Set second position
+- `//sel <type>` - Change selection type
+
+### Basic Operations
+- `//set <block>` - Fill selection with block
+- `//replace <from> <to>` - Replace blocks
+- `//copy` - Copy selection
+- `//paste` - Paste copied region
+- `//undo` - Undo last action
+- `//redo` - Redo last undone action
+
+### Advanced Features (Admin+)
+- `//generate <formula>` - Generate terrain
+- `//smooth [iterations]` - Smooth terrain
+- `//forest [type]` - Generate forest
+- `//pyramid <block> <size>` - Create pyramid
+
+## 🔧 Server Management
+
+### Performance Monitoring (Admin+)
+- `/tps` - View server tick rate
+- `/memory` - Check memory usage
+- `/gc` - Force garbage collection
+- `/lag` - Detailed performance info
+
+### Plugin Management (Admin+)
+- `/plugins` - List loaded plugins
+- `/plugin load <plugin>` - Load plugin
+- `/plugin unload <plugin>` - Unload plugin
+- `/reload` - Reload server configuration
+
+### Economy Management (Admin+)
+- `/eco give <player> <amount>` - Give money
+- `/eco take <player> <amount>` - Remove money
+- `/eco set <player> <amount>` - Set balance
+- `/eco reset <player>` - Reset balance
+
+## 🏠 Claim Management
+
+### Claim Administration (Mod+)
+- `/claimslist <player>` - View player's claims
+- `/deleteclaim` - Delete claim you're in
+- `/deleteallclaims <player>` - Remove all player claims
+- `/claimexplosions` - Toggle explosions in claims
+
+### Trust Management
+- `/trust <player>` - Trust player in current claim
+- `/untrust <player>` - Remove trust from player
+- `/trustlist` - View trusted players in claim
+
+### Claim Tools
+- `/claimbook` - Get claim information book
+- `/claimslist` - List all claims in area
+- `/nearbyclaims` - Show nearby claims
+
+## 🚫 Anti-Grief Tools
+
+### CoreProtect Integration (Mod+)
+- `/co inspect` - Toggle block inspector
+- `/co lookup u:<player> t:<time>` - Search player actions
+- `/co rollback u:<player> t:<time>` - Undo player actions
+- `/co restore u:<player> t:<time>` - Restore player actions
+
+### Investigation Commands
+- `/co lookup b:<block> t:<time>` - Find block changes
+- `/co lookup a:<action> t:<time>` - Find specific actions
+- `/co lookup r:<radius>` - Search in radius
+
+### Time Parameters
+- `t:1h` - 1 hour ago
+- `t:1d` - 1 day ago
+- `t:1w` - 1 week ago
+- `t:30m` - 30 minutes ago
+
+## 📊 Logging and Reports
+
+### Player Activity (Mod+)
+- `/seen <player>` - Last login/logout time
+- `/playtime <player>` - Total playtime
+- `/firstplayed <player>` - First join date
+- `/activity` - Server activity statistics
+
+### Punishment Tracking
+- `/history <player>` - Punishment history
+- `/warnings <player>` - Active warnings
+- `/checkban <player>` - Check ban status
+- `/tempbanlist` - List temporary bans
+
+## 🎯 Event Management
+
+### Event Commands (Event-Staff+)
+- `/event create <name>` - Create new event
+- `/event start` - Begin event
+- `/event end` - End current event
+- `/event tp <player>` - Teleport to event
+
+### Contest Management
+- `/contest create <theme>` - Start building contest
+- `/contest judge` - Enable judging mode
+- `/contest winner <player>` - Declare winner
+- `/contest rewards` - Distribute prizes
+
+## 🔒 Security Commands
+
+### Account Security (Admin+)
+- `/accounts <player>` - View linked accounts
+- `/ipban <player>` - Ban player's IP
+- `/whitelist add <player>` - Add to whitelist
+- `/whitelist remove <player>` - Remove from whitelist
+
+### Session Management
+- `/sessions` - View active sessions
+- `/kick <player>` - Force disconnect
+- `/kickall [reason]` - Disconnect all players
+
+## 📝 Communication Tools
+
+### Staff Communication
+- `/sc <message>` - Staff chat message
+- `/staffmsg <player> <message>` - Private staff message
+- `/modreq <message>` - Request senior staff help
+
+### Player Communication
+- `/reply <message>` - Reply to last message
+- `/mail send <player> <message>` - Send offline message
+- `/mail read` - Read received messages
+
+## ⚠️ Emergency Commands
+
+### Crisis Management (Admin+)
+- `/lockdown` - Prevent new connections
+- `/maintenance` - Enable maintenance mode
+- `/saveall` - Force save all data
+- `/stop` - Safely shut down server
+
+### Rollback Procedures
+- `/co rollback u:#global t:30m` - Global 30-minute rollback
+- `/backup restore <timestamp>` - Restore from backup
+- `/world reload` - Reload world data
+
+## 📋 Staff Protocols
+
+### Incident Response
+1. **Document the issue** - Screenshots, player names, time
+2. **Secure the area** - Prevent further damage
+3. **Investigate thoroughly** - Use CoreProtect tools
+4. **Apply appropriate punishment** - Follow guidelines
+5. **Report to senior staff** - Major incidents only
+
+### Player Reports
+1. **Listen to complainant** - Get full story
+2. **Investigate claims** - Use available tools
+3. **Gather evidence** - Screenshots, logs, witness accounts
+4. **Take appropriate action** - Warn, mute, ban as needed
+5. **Follow up** - Ensure issue is resolved
+
+### Ban Appeal Process
+1. **Review original ban reason**
+2. **Check punishment history**
+3. **Evaluate appeal sincerity**
+4. **Consult with banning staff**
+5. **Make informed decision**
+
+## 🎖️ Staff Ranks and Permissions
+
+### Helper
+- Basic moderation commands
+- Player assistance tools
+- Cannot ban or use CoreProtect
+
+### Moderator
+- Full moderation powers
+- CoreProtect access
+- Economy management
+- Temporary bans only
+
+### Admin
+- All server commands
+- WorldEdit access
+- Plugin management
+- Permanent bans
+
+### Owner
+- Full server control
+- System administration
+- Staff management
+- Final authority
+
+## 📚 Best Practices
+
+### Command Usage
+- **Always include reasons** for punishments
+- **Use appropriate severity** - escalate gradually
+- **Document important actions** in staff chat
+- **Consult seniors** for major decisions
+
+### Player Interaction
+- **Remain professional** at all times
+- **Be fair and consistent** with punishments
+- **Listen to player concerns** fully
+- **Explain decisions** when asked
+
+### Emergency Situations
+- **Act quickly** to prevent damage
+- **Coordinate with other staff** online
+- **Use minimum necessary force**
+- **Report to admins** immediately
+
+Remember: With great power comes great responsibility. Use these commands wisely and always act in the best interest of the server community. 🛡️
